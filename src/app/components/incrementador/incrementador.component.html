@@ -7,9 +7,11 @@
         </button>
     </span>
 
-    <input type="number" 
-    [(ngModel)]="progreso"
-    class="form-control">
+    <input  type="number"
+            [ngClass]="{'is-invalid': progreso > 100 || progreso < 0 }"
+            (ngModelChange)="onChange($event)"
+            [(ngModel)]="progreso"
+            class="form-control">
 
     <span class="input-group-btn">
         <button (click)="cambiarValor(5)"
