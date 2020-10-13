@@ -11,7 +11,7 @@ export class Grafica1Component implements OnInit {
 
   public labels: string[] = ['ventas', 'impuestos', 'multas'];
   public data = [
-    [350, 450, 100]
+    [140, 500, 40]
   ];
 
 
